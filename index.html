@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceremonia de Cacao: El Ritmo de tu Corazón - Abre tu Corazón con Daniela</title>
+    
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1476530077022760');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1476530077022760&ev=PageView&noscript=1"
+    /></noscript>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-brown: #9b7d61;
+            --color-rose: #daa38f;
+            --color-beige: #e9d7c0;
+            --color-sage: #92ada4;
+            --color-cream: #fffeb;
+            --color-dark: #2c2c2c;
+            --color-white: #ffffff;
+            --color-gold: #d4af37;
+        }
+
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            line-height: 1.6;
+            color: var(--color-dark);
+            overflow-x: hidden;
+        }
+
+        /* Animaciones */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+
+        @keyframes gentlePulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            14% { transform: scale(1.05); }
+            28% { transform: scale(1); }
+            42% { transform: scale(1.05); }
+            70% { transform: scale(1); }
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--color-sage) 0%, var(--color-beige) 30%, var(--color-rose) 70%, var(--color-brown) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="hearts" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1.5" fill="rgba(255,255,255,0.15)"/><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="30" cy="30" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23hearts)"/></svg>');
+        }
+
+        .hero-content {
+            max-width: 900px;
+            padding: 2rem;
+            position: relative;
+            z-index: 2;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .hero-date {
+            background: var(--color-gold);
+            color: var(--color-dark);
+            padding: 15px 35px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 1rem;
+            margin-bottom: 25px;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            animation: gentlePulse 3s ease-in-out infinite;
+        }
+
+        .hero h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 4.8rem;
+            font-weight: 700;
+            color: var(--color-white);
+            margin-bottom: 25px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: 1.6rem;
+            color: var(--color-cream);
+            margin-bottom: 40px;
+            font-weight: 500;
+            opacity: 0.95;
+            font-style: italic;
+        }
+
+        .hero-heart {
+            font-size: 4rem;
+            color: var(--color-rose);
+            margin: 20px 0;
+            animation: heartbeat 2s ease-in-out infinite;
+        }
+
+        .cta-primary {
+            background: linear-gradient(45deg, var(--color-rose), var(--color-gold));
+            color: var(--color-dark);
+            padding: 20px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: 800;
+            text-decoration: none;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+            margin: 20px 10px;
+            display: inline-block;
+        }
+
+        .cta-primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+
+        .cta-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .cta-primary:hover::before {
+            left: 100%;
+        }
+
+        /* What is Cacao Section */
+        .cacao-info {
+            padding: 80px 20px;
+            background: var(--color-beige);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            color: var(--color-brown);
+            text-align: center;
+            margin-bottom: 60px;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(45deg, var(--color-brown), var(--color-rose));
+            display: block;
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+
+        .cacao-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .cacao-card {
+            background: var(--color-white);
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cacao-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+        }
+
+        .cacao-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(45deg, var(--color-brown), var(--color-rose), var(--color-gold));
+        }
+
+        .cacao-icon {
+            font-size: 4rem;
+            color: var(--color-brown);
+            margin-bottom: 25px;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .cacao-card h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            color: var(--color-brown);
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .cacao-card p {
+            color: var(--color-dark);
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        /* Experience Section */
+        .experience {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, var(--color-sage), var(--color-beige));
+            color: var(--color-dark);
+        }
+
+        .experience-timeline {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            position: relative;
+            justify-content: center;
+        }
+
+        .timeline-content {
+            background: var(--color-white);
+            padding: 30px;
+            border-radius: 20px;
+            max-width: 600px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .timeline-content h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            color: var(--color-brown);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .timeline-content p {
+            color: var(--color-dark);
+            line-height: 1.7;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            padding: 80px 20px;
+            background: var(--color-white);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .benefit-card {
+            background: linear-gradient(135deg, var(--color-cream), var(--color-beige));
+            padding: 35px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            color: var(--color-rose);
+            margin-bottom: 20px;
+            animation: float 5s ease-in-out infinite;
+        }
+
+        .benefit-card h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            color: var(--color-brown);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .benefit-card p {
+            color: var(--color-dark);
+            line-height: 1.7;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, var(--color-brown), var(--color-sage));
+            color: var(--color-white);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .testimonial {
+            background: rgba(255,255,255,0.15);
+            padding: 35px;
+            border-radius: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .testimonial:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.2);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            position: relative;
+        }
+
+        .testimonial-text::before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--color-gold);
+            position: absolute;
+            top: -10px;
+            left: 25px;
+            font-family: serif;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: var(--color-cream);
+            margin-bottom: 10px;
+        }
+
+        .testimonial-stars {
+            color: var(--color-gold);
+            font-size: 1.3rem;
+        }
+
+        /* Investment Section */
+        .investment {
+            padding: 80px 20px;
+            background: var(--color-beige);
+            text-align: center;
+        }
+
+        .investment-card {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--color-white);
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .investment-card::before {
+            content: 'OFERTA ESPECIAL';
+            position: absolute;
+            top: -5px;
+            right: -40px;
+            background: var(--color-gold);
+            color: var(--color-dark);
+            padding: 10px 50px;
+            transform: rotate(45deg);
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .price {
+            font-size: 4rem;
+            color: var(--color-brown);
+            font-weight: 900;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .price-details {
+            font-size: 1.2rem;
+            color: var(--color-dark);
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .includes-list {
+            text-align: left;
+            margin: 30px 0;
+            padding: 0 20px;
+        }
+
+        .includes-list li {
+            margin: 15px 0;
+            color: var(--color-dark);
+            font-size: 1.05rem;
+            line-height: 1.6;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .includes-list li::before {
+            content: '✓';
+            color: var(--color-gold);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+
+        /* About Daniela */
+        .about-daniela {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, var(--color-beige), var(--color-sage));
+        }
+
+        .about-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image {
+            text-align: center;
+        }
+
+        .profile-circle {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--color-brown), var(--color-rose));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            animation: float 6s ease-in-out infinite;
+            border: 5px solid var(--color-white);
+        }
+
+        .profile-icon {
+            font-size: 5rem;
+            color: var(--color-white);
+        }
+
+        .about-text h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.8rem;
+            color: var(--color-brown);
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: var(--color-dark);
+            line-height: 1.8;
+        }
+
+        /* FAQ */
+        .faq {
+            padding: 80px 20px;
+            background: var(--color-white);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--color-cream);
+            margin-bottom: 15px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .faq-question {
+            padding: 25px;
+            font-weight: 600;
+            color: var(--color-brown);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        .faq-question:hover {
+            background: var(--color-beige);
+        }
+
+        .faq-answer {
+            padding: 0 25px 25px;
+            color: var(--color-dark);
+            line-height: 1.7;
+            display: none;
+        }
+
+        .faq-answer.active {
+            display: block;
+            animation: fadeInUp 0.3s ease-out;
+        }
+
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Final CTA */
+        .final-cta {
+            background: linear-gradient(135deg, var(--color-brown), var(--color-sage));
+            padding: 80px 20px;
+            color: var(--color-white);
+            text-align: center;
+            position: relative;
+        }
+
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="cacao-pattern" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="15" cy="15" r="1.5" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23cacao-pattern)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .final-content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .final-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.2rem;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .final-subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+
+        .whatsapp-btn {
+            background: #25d366;
+            color: white;
+            padding: 22px 45px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: bold;
+            display: inline-block;
+            margin: 20px 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.3rem;
+            }
+            
+            .section-title {
+                font-size: 2.5rem;
+            }
+            
+            .cacao-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+            
+            .profile-circle {
+                width: 200px;
+                height: 200px;
+            }
+            
+            .timeline-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .timeline-time {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            
+            .timeline-content {
+                margin-left: 0;
+            }
+            
+            .timeline-content:hover {
+                transform: translateY(-5px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-date">
+                Lunes 15 de Septiembre - 19:30 hrs
+            </div>
+            
+            <h1>Ceremonia de Cacao</h1>
+            <p class="hero-subtitle">El Ritmo de tu Corazón</p>
+            
+            <div class="hero-heart">♥</div>
+            
+            <p style="font-size: 1.3rem; color: var(--color-cream); margin: 30px 0; max-width: 700px; margin-left: auto; margin-right: auto;">
+                Una experiencia sagrada de 90 minutos para abrir tu corazón, conectar con tu esencia más pura y encontrar la paz que tu alma anhela
+            </p>
+
+            <div>
+                <a href="#reservar" class="cta-primary" onclick="fbq('track', 'InitiateCheckout', {content_name: 'Ceremonia de Cacao', value: 25000, currency: 'CLP'});">
+                    Reservar mi Lugar Sagrado
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cacao-info" id="que-es-cacao">
+        <div class="container">
+            <h2 class="section-title">El Sagrado Poder del Cacao</h2>
+            <p style="text-align: center; font-size: 1.3rem; color: var(--color-dark); max-width: 800px; margin: 0 auto 50px;">
+                El cacao es mucho más que un alimento. Es una medicina ancestral que nos conecta con nuestro corazón y despierta nuestra conciencia.
+            </p>
+
+            <div class="cacao-grid">
+                <div class="cacao-card">
+                    <div class="cacao-icon">🍫</div>
+                    <h3>Medicina del Corazón</h3>
+                    <p>
+                        El cacao contiene teobromina, un compuesto natural que literalmente significa "alimento de los dioses". Esta sustancia abre gentilmente nuestro corazón, creando un estado de amor incondicional y conexión profunda con nuestra esencia.
+                    </p>
+                </div>
+
+                <div class="cacao-card">
+                    <div class="cacao-icon">🌱</div>
+                    <h3>Sabiduría Ancestral</h3>
+                    <p>
+                        Durante miles de años, las culturas mesoamericanas han usado el cacao en ceremonias sagradas para conectar con lo divino. Es un puente entre nuestro mundo físico y el espiritual, facilitando estados profundos de meditación y autoconocimiento.
+                    </p>
+                </div>
+
+                <div class="cacao-card">
+                    <div class="cacao-icon">✨</div>
+                    <h3>Expansión de Conciencia</h3>
+                    <p>
+                        El cacao activa neurotransmisores como la serotonina y la dopamina, creando sensaciones naturales de bienestar y alegría. Nos ayuda a liberar bloqueos emocionales y a acceder a estados elevados de conciencia y creatividad.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience">
+        <div class="container">
+            <h2 class="section-title" style="color: var(--color-white);">Tu Experiencia Sagrada</h2>
+            <p style="text-align: center; font-size: 1.3rem; color: var(--color-white); max-width: 800px; margin: 0 auto 50px; opacity: 0.9;">
+                90 minutos diseñados cuidadosamente para llevarte en un viaje profundo hacia tu interior
+            </p>
+
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>Apertura del Espacio Sagrado</h4>
+                        <p>Creamos juntas un círculo de confianza y amor. Establecemos intenciones claras para nuestra ceremonia y preparamos nuestro corazón para recibir la medicina del cacao.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>Bendición y Ceremonia del Cacao</h4>
+                        <p>Bendecimos el cacao ceremonial con amor y respeto ancestral. Realizamos la ceremonia honrando esta medicina sagrada y la consumimos conscientemente, permitiendo que abra nuestro corazón.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>Conexión con el Corazón</h4>
+                        <p>Realizamos ejercicios profundos de conexión con el corazón a través de meditación guiada y movimiento consciente. Exploramos emociones, liberamos bloqueos y nos conectamos con el amor incondicional.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>Baño de Sonoterapia Relajante</h4>
+                        <p>Experimentamos una sesión de sonoterapia usando cuencos tibetanos, tambores y otros instrumentos sagrados. Las vibraciones sonoras nos ayudan a integrar la experiencia y alcanzar un estado de relajación profunda.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>Oráculo y Cierre del Círculo</h4>
+                        <p>Cerramos la ceremonia con un oráculo como guía, recibiendo mensajes de sabiduría para el grupo. Integramos las experiencias vividas y sellamos el espacio sagrado con gratitud y amor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">Beneficios de la Ceremonia</h2>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">❤️</div>
+                    <h4>Apertura del Corazón</h4>
+                    <p>Experimenta una conexión profunda contigo misma y desarrolla la capacidad de amar sin condiciones, comenzando por ti.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🧘</div>
+                    <h4>Paz Interior Profunda</h4>
+                    <p>Alcanza estados meditativos naturales que te permitirán encontrar calma y serenidad en medio del caos cotidiano.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌟</div>
+                    <h4>Claridad Mental</h4>
+                    <p>Libera la mente de pensamientos negativos y obtén insights poderosos sobre tu propósito y dirección de vida.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🦋</div>
+                    <h4>Liberación Emocional</h4>
+                    <p>Suelta patrones emocionales que ya no te sirven y abraza una nueva versión de ti misma, más auténtica y libre.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌊</div>
+                    <h4>Relajación Profunda</h4>
+                    <p>La sonoterapia te llevará a un estado de relajación que regenerará tu sistema nervioso y restaurará tu energía vital.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌈</div>
+                    <h4>Conexión Espiritual</h4>
+                    <p>Reconecta con tu esencia espiritual y siente la unión con algo más grande que tú, expandiendo tu conciencia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title" style="color: var(--color-white);">Experiencias Transformadoras</h2>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p class="testimonial-text">
+                        "Llegué llorando con muchas emociones creyendo que iba a suceder una cosa y me fui con el corazón lleno, ligero y con mucha alegría. Daniela creó un espacio tan sagrado y amoroso."
+                    </p>
+                    <p class="testimonial-author">Jocelyn, 32 años</p>
+                    <div class="testimonial-stars">★★★★★</div>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="testimonial-text">
+                        "Sentí que algo se destapó en mi corazón, como que se liberó. Durante la ceremonia pude soltar cargas que llevaba años guardando. El cacao realmente abre puertas internas."
+                    </p>
+                    <p class="testimonial-author">Francisca, 28 años</p>
+                    <div class="testimonial-stars">★★★★★</div>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="testimonial-text">
+                        "La combinación del cacao con la sonoterapia fue mágica. Sentí como si mi alma se expandiera y por primera vez en mucho tiempo me conecté realmente conmigo misma. Transformador."
+                    </p>
+                    <p class="testimonial-author">Valentina, 35 años</p>
+                    <div class="testimonial-stars">★★★★★</div>
+                </div>
+
+                <div class="testimonial">
+                    <p class="testimonial-text">
+                        "El oráculo al final fue el cierre perfecto. Recibí exactamente el mensaje que mi corazón necesitaba escuchar. Salí de la ceremonia sintiéndome renovada y con una claridad increíble."
+                    </p>
+                    <p class="testimonial-author">Carolina, 29 años</p>
+                    <div class="testimonial-stars">★★★★★</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="investment" id="reservar">
+        <div class="container">
+            <h2 class="section-title">Tu Inversión en Transformación</h2>
+            
+            <div class="investment-card">
+                <div class="price">$25.000</div>
+                <div class="price-details">
+                    Una inversión sagrada en tu bienestar y crecimiento espiritual
+                </div>
+
+                <ul class="includes-list">
+                    <li>90 minutos de experiencia ceremonial completa</li>
+                    <li>Cacao ceremonial de alta calidad incluido</li>
+                    <li>Bendición y ceremonia sagrada del cacao</li>
+                    <li>Ejercicios de conexión con el corazón (meditación y movimiento)</li>
+                    <li>Sesión completa de sonoterapia relajante</li>
+                    <li>Oráculo como guía para el cierre</li>
+                    <li>Espacio sagrado y contención energética</li>
+                    <li>Acompañamiento personalizado durante toda la ceremonia</li>
+                </ul>
+
+                <div style="margin: 30px 0;">
+                    <p style="background: var(--color-beige); padding: 20px; border-radius: 15px; color: var(--color-dark); font-weight: 600;">
+                        <strong>Cupos Limitados</strong> para crear un ambiente íntimo y sagrado
+                    </p>
+                </div>
+
+                <a href="https://www.flow.cl/btn.php?token=qd13d88c06b2c65c2c5f47fed9c1fef176c45642" class="cta-primary" style="font-size: 1.3rem; padding: 20px 40px;" onclick="fbq('track', 'Purchase', {content_name: 'Ceremonia de Cacao', value: 25000, currency: 'CLP'});">
+                    ¡Inscríbete Ahora!
+                </a>
+
+                <p style="margin-top: 20px; color: var(--color-dark); opacity: 0.8;">
+                    Pago anticipado para asegurar tu cupo en esta experiencia única
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-daniela">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="profile-circle">
+                        <div class="profile-icon">🌸</div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2>Soy Daniela, tu Guía Ceremonial</h2>
+                    <p>
+                        He dedicado años de mi vida a estudiar las tradiciones sagradas del cacao. Realicé un viaje profundo de conocimiento y expansión por Latinoamérica donde tuve muchos momentos de comunión profunda con el cacao y ratifiqué todo lo que había estudiado sobre él y mis formaciones previas.
+                    </p>
+                    <p>
+                        Mi formación en sonoterapia la realicé en India y en Katmandú con personas pioneras en sonoterapia en esos países, donde aprendí las técnicas más profundas de sanación a través del sonido.
+                    </p>
+                    <p>
+                        <strong>Como facilitadora certificada en ceremonias de cacao y sonoterapia, he tenido el honor de guiar a cientos de personas en experiencias transformadoras. En esta ceremonia, recibirás todo mi amor, conocimiento y la energía sagrada que he cultivado a través de años de práctica.</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        ¿Necesito experiencia previa con el cacao ceremonial?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        No es necesaria ninguna experiencia previa. Te guío paso a paso durante toda la ceremonia, desde la preparación hasta la integración final. Es perfecta tanto para principiantes como para personas con experiencia.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        ¿El cacao ceremonial tiene efectos secundarios?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        El cacao ceremonial es completamente natural y seguro. Algunas personas pueden sentir un ligero aumento de energía o sensibilidad emocional, lo cual es normal y parte del proceso de apertura del corazón. Si tienes alguna condición médica específica, consúltame antes de la ceremonia.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        ¿Qué debo traer o cómo debo prepararme?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Solo trae ropa cómoda, una mente abierta y tu corazón dispuesto a recibir. Te recomiendo comer ligero ese día y llegar con una intención clara de lo que deseas sanar o transformar. Todo lo demás está incluido.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        ¿Puedo asistir si estoy embarazada o amamantando?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        El cacao contiene cafeína natural, por lo que recomiendo consultar con tu médico antes de participar si estás embarazada o amamantando. Podemos adaptar la experiencia para que sea segura y beneficiosa para ti.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        ¿Qué pasa si no puedo asistir después de pagar?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Si avisas con 48 horas de anticipación, te devolvemos el dinero menos los cargos de la página web de pago. Si avisas con menos de 48 horas, no hay devolución ni posibilidad de recuperar el cupo, ya que es un lugar que se pierde y no puedo recuperar para otra persona.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="final-cta">
+        <div class="final-content">
+            <h2 class="final-title">Tu Corazón Te Está Llamando</h2>
+            <p class="final-subtitle">
+                Este es el momento perfecto para reconectarte con tu esencia más pura y experimentar el amor incondicional que reside en tu corazón.
+            </p>
+
+            <div class="urgency-note">
+                <h3 style="margin-bottom: 15px; font-size: 1.5rem;">CUPOS LIMITADOS</h3>
+                <p style="font-size: 1.1rem;">
+                    La ceremonia del 15 de septiembre se está llenando rápidamente. No dejes que esta oportunidad de transformación pase de largo.
+                </p>
+            </div>
+
+            <div>
+                <a href="https://www.flow.cl/btn.php?token=qd13d88c06b2c65c2c5f47fed9c1fef176c45642" class="whatsapp-btn">
+                    Reservar mi Lugar Sagrado
+                </a>
+                
+                <a href="https://wa.me/56991281783?text=Hola%20Daniela!%20Tengo%20algunas%20preguntas%20sobre%20la%20Ceremonia%20de%20Cacao%20del%2015%20de%20septiembre" class="whatsapp-btn" style="background: var(--color-brown);" onclick="fbq('track', 'Contact');">
+                    Hacer una Consulta
+                </a>
+            </div>
+
+            <p style="margin-top: 30px; font-size: 1.1rem; opacity: 0.9;">
+                Con amor y luz, Daniela - esperando compartir esta experiencia sagrada contigo ♥
+            </p>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // FAQ Toggle
+        function toggleFaq(element) {
+            const faqItem = element.parentElement;
+            const answer = faqItem.querySelector('.faq-answer');
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-item').forEach(item => {
+                if (item !== faqItem) {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-answer').classList.remove('active');
+                }
+            });
+            
+            // Toggle current FAQ
+            faqItem.classList.toggle('active');
+            answer.classList.toggle('active');
+        }
+
+        // Intersection Observer for animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        // Observe all cards and sections
+        document.querySelectorAll('.cacao-card, .benefit-card, .testimonial, .timeline-content').forEach((el) => {
+            observer.observe(el);
+        });
+
+        // Add hover effects to buttons
+        document.querySelectorAll('.cta-primary, .whatsapp-btn').forEach(btn => {
+            btn.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-3px) scale(1.02)';
+            });
+            
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Heart animation on scroll
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hearts = document.querySelectorAll('.hero-heart');
+            
+            hearts.forEach(heart => {
+                const speed = scrolled * 0.5;
+                heart.style.transform = `translateY(${speed * 0.1}px) scale(${1 + speed * 0.0001})`;
+            });
+        });
+
+        // Timeline animation
+        const timelineObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
+                        entry.target.style.opacity = '1';
+                    }, index * 200);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('.timeline-item').forEach((el) => {
+            el.style.opacity = '0';
+            timelineObserver.observe(el);
+        });
+
+        // Track scroll depth for engagement
+        let maxScrollPercent = 0;
+        window.addEventListener('scroll', () => {
+            const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+            if (scrollPercent > maxScrollPercent) {
+                maxScrollPercent = scrollPercent;
+                
+                // Track engagement milestones
+                if (maxScrollPercent === 25) {
+                    fbq('trackCustom', 'ScrollDepth25');
+                } else if (maxScrollPercent === 50) {
+                    fbq('trackCustom', 'ScrollDepth50');
+                } else if (maxScrollPercent === 75) {
+                    fbq('trackCustom', 'ScrollDepth75');
+                } else if (maxScrollPercent === 90) {
+                    fbq('trackCustom', 'ScrollDepth90');
+                }
+            }
+        });
+
+        // Track time on page
+        let startTime = Date.now();
+        window.addEventListener('beforeunload', () => {
+            const timeSpent = Math.round((Date.now() - startTime) / 1000);
+            if (timeSpent > 30) {
+                fbq('trackCustom', 'TimeOnPage', {time_spent: timeSpent});
+            }
+        });
+
+        // Track section views
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const sectionName = entry.target.className.split(' ')[0];
+                    fbq('trackCustom', 'ViewSection', {section: sectionName});
+                }
+            });
+        }, {
+            threshold: 0.5
+        });
+
+        document.querySelectorAll('section').forEach((section) => {
+            sectionObserver.observe(section);
+        });
+    </script>
+</body>
+</html>
